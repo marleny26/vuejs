@@ -9,11 +9,11 @@
 </head>
 <body>
     <div id="app">
-        <h1> {{ titulo }}</h1>
-        <div v-if="see">
-            Esto solo se ve, cuando "See" es verdadero
+     <div id="trabajo1">
+        <div id="seccion1">
+            <h1> {{ titulo }}</h1>
         </div>
-    
+       
         <div id="contenedor">
             <ul>
                 <li v-for="discoteca in discotecas">
@@ -24,10 +24,53 @@
 
                 </li>
             </ul>
-        </div>
-    
+         </div>
     </div>
+    <h1> {{ titulo }}</h1>
+    <div v-if="see">
+         Promedio Final Ponderado
+    </div>
+    <div style="margin-top: 20px;">
+         <h2>Calcula Promedio</h2>
+         <p>Ingresa tus calificativos</p>
+         <div>
+             <label>Programacion</label>
+             <input type="range" v-model="progra" min="0" max="20" step="1" v-on:change="calcularPromP">
+             <p style="display: inline;"> Crédito: {{ credito.progra }}</p>
+             <p style="display: inline;">Nota: {{ progra }}</p>
+             <p><b>{{ promedio.progra }}</b></p>
+         </div>
+         <div>
+             <label>Desarrollo Web</label>
+             <input type="range" v-model="desarro" min="0" max="20" step="1" v-on:change="calcularPromDW">
+             <p style="display: inline;"> Crédito: {{ credito.desarro }}</p>
+             <p style="display: inline;">Nota: {{ desarro }}</p>
+             <p><b>{{ promedio.desarro }} </b></p>
+         </div>
+         <div>
+             <label>Base de Datos</label>
+             <input type="range" v-model="base" min="0" max="20" step="1" v-on:change="calcularPromBD">
+             <p style="display: inline;"> Crédito: {{ credito.base }}</p>
+             <p style="display: inline;">Nota: {{ base }}</p>
+             <p><b>{{ promedio.base }}</b></p>
+         </div>
+         <div>
+             <label>Ingeniería de Software</label>
+             <input type="range" v-model="ingSoft" min="0" max="20" step="1" v-on:change="calcularPromIS">
+             <p style="display: inline;"> Crédito: {{ credito.ingSoft }}</p>
+             <p style="display: inline;">Nota: {{ ingSoft }}</p>
+             <p><b>{{ promedio.ingSoft}}</b></p>
+         </div>
+         <hr>
+         <div>
+             <p>Promedio Ponderado: {{ promPon.final }}</p>
+         </div>
+    </div>
+ </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="app/app.js"></script>
-</html> 
+</html>
+    
+    </div>
+    
