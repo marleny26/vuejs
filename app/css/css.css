@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#app {
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+
+#contenedor {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f5f5f5; /* Color de fondo opcional */
+}
+
+/* Estilos para la lista de discotecas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden; /* Evitar que el contenido se desborde */
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+img {
+    float: right; /* Colocar las imágenes a la derecha */
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
+    max-width: 200px; /* Ancho máximo de la imagen */
+    height: auto;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    overflow: hidden; /* Evitar que el texto se desborde */
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
